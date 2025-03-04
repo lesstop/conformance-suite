@@ -325,6 +325,9 @@ public abstract class AbstractVPID3WalletTest extends AbstractRedirectServerTest
 		}
 		eventLog.endBlock();
 	}
+	// FIXME when waiting for implicit submit set a timeout, to make it clearer when people are treating the redirect_url from direct_post endpoint as a http endpoint
+	// FIXME send parameters in openid4vp:// url in a different order
+	// FIXME test without use: enc in client_metadata
 
 	public static class CreateAuthorizationRequestSteps extends AbstractConditionSequence {
 		private VPID3WalletRequestMethod requestMethod;
